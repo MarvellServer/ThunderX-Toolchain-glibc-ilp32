@@ -37,8 +37,13 @@ sendfile (int out_fd, int in_fd, off_t *offset, size_t count)
       off64 = *offset;
     }
 
+#if defined __NR_sendfile64
   rc = INLINE_SYSCALL (sendfile64, 4, out_fd, in_fd,
                        offset ? &off64 : NULL, count);
+#else
+  rc = INLINE_SYSCALL (sendfile, 4, out_fd, in_fd,
+                       offset ? &off64 : NULL, count);
+#endif
   if (offset)
     *offset = off64;
   return rc;
