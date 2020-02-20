@@ -1043,6 +1043,9 @@ ifloat: 1
 ildouble: 2
 ldouble: 2
 
+Function: "cos_vlen2":
+double: 1
+
 Function: "cosh":
 double: 1
 float: 1
@@ -1551,6 +1554,12 @@ ifloat: 1
 ildouble: 3
 ldouble: 3
 
+Function: "exp10_vlen2":
+double: 2
+
+Function: "exp10_vlen4":
+float: 1
+
 Function: "exp2":
 double: 1
 float: 1
@@ -1583,6 +1592,12 @@ ifloat: 1
 ildouble: 2
 ldouble: 2
 
+Function: "exp2_vlen2":
+double: 1
+
+Function: "exp2_vlen4":
+float: 1
+
 Function: "exp_downward":
 double: 1
 float: 1
@@ -1600,6 +1615,12 @@ double: 1
 float: 1
 idouble: 1
 ifloat: 1
+
+Function: "exp_vlen2":
+double: 1
+
+Function: "exp_vlen4":
+float: 1
 
 Function: "expm1":
 double: 1
@@ -1855,6 +1876,12 @@ ifloat: 2
 ildouble: 1
 ldouble: 1
 
+Function: "log10_vlen2":
+double: 2
+
+Function: "log10_vlen4":
+float: 2
+
 Function: "log1p":
 double: 1
 float: 1
@@ -1919,6 +1946,12 @@ ifloat: 3
 ildouble: 1
 ldouble: 1
 
+Function: "log2_vlen2":
+double: 1
+
+Function: "log2_vlen4":
+float: 1
+
 Function: "log_downward":
 float: 2
 ifloat: 2
@@ -1938,6 +1971,12 @@ idouble: 1
 ifloat: 2
 ildouble: 1
 ldouble: 1
+
+Function: "log_vlen2":
+double: 1
+
+Function: "log_vlen4":
+float: 1
 
 Function: "pow":
 double: 1
@@ -1971,6 +2010,12 @@ ifloat: 1
 ildouble: 2
 ldouble: 2
 
+Function: "pow_vlen2":
+double: 1
+
+Function: "pow_vlen4":
+float: 1
+
 Function: "sin":
 double: 1
 float: 1
@@ -2002,6 +2047,9 @@ idouble: 1
 ifloat: 1
 ildouble: 3
 ldouble: 3
+
+Function: "sin_vlen2":
+double: 1
 
 Function: "sincos":
 double: 1
