@@ -72,11 +72,15 @@ GLIBC_2.17 pread F
 GLIBC_2.17 pread64 F
 GLIBC_2.17 pthread_attr_getaffinity_np F
 GLIBC_2.17 pthread_attr_getguardsize F
+GLIBC_2.17 pthread_attr_getschedpolicy F
+GLIBC_2.17 pthread_attr_getscope F
 GLIBC_2.17 pthread_attr_getstack F
 GLIBC_2.17 pthread_attr_getstackaddr F
 GLIBC_2.17 pthread_attr_getstacksize F
 GLIBC_2.17 pthread_attr_setaffinity_np F
 GLIBC_2.17 pthread_attr_setguardsize F
+GLIBC_2.17 pthread_attr_setschedpolicy F
+GLIBC_2.17 pthread_attr_setscope F
 GLIBC_2.17 pthread_attr_setstack F
 GLIBC_2.17 pthread_attr_setstackaddr F
 GLIBC_2.17 pthread_attr_setstacksize F
@@ -89,11 +93,15 @@ GLIBC_2.17 pthread_barrierattr_init F
 GLIBC_2.17 pthread_barrierattr_setpshared F
 GLIBC_2.17 pthread_cancel F
 GLIBC_2.17 pthread_cond_broadcast F
+GLIBC_2.17 pthread_cond_destroy F
+GLIBC_2.17 pthread_cond_init F
 GLIBC_2.17 pthread_cond_signal F
 GLIBC_2.17 pthread_cond_timedwait F
 GLIBC_2.17 pthread_cond_wait F
+GLIBC_2.17 pthread_condattr_destroy F
 GLIBC_2.17 pthread_condattr_getclock F
 GLIBC_2.17 pthread_condattr_getpshared F
+GLIBC_2.17 pthread_condattr_init F
 GLIBC_2.17 pthread_condattr_setclock F
 GLIBC_2.17 pthread_condattr_setpshared F
 GLIBC_2.17 pthread_create F
@@ -104,6 +112,7 @@ GLIBC_2.17 pthread_getattr_np F
 GLIBC_2.17 pthread_getconcurrency F
 GLIBC_2.17 pthread_getcpuclockid F
 GLIBC_2.17 pthread_getname_np F
+GLIBC_2.17 pthread_getschedparam F
 GLIBC_2.17 pthread_getspecific F
 GLIBC_2.17 pthread_join F
 GLIBC_2.17 pthread_key_create F
@@ -157,6 +166,7 @@ GLIBC_2.17 pthread_setcancelstate F
 GLIBC_2.17 pthread_setcanceltype F
 GLIBC_2.17 pthread_setconcurrency F
 GLIBC_2.17 pthread_setname_np F
+GLIBC_2.17 pthread_setschedparam F
 GLIBC_2.17 pthread_setschedprio F
 GLIBC_2.17 pthread_setspecific F
 GLIBC_2.17 pthread_sigmask F
@@ -226,4 +236,3 @@ GLIBC_2.30 pthread_mutex_clocklock F
 GLIBC_2.30 pthread_rwlock_clockrdlock F
 GLIBC_2.30 pthread_rwlock_clockwrlock F
 GLIBC_2.30 sem_clockwait F
-GLIBC_2.31 pthread_clockjoin_np F
