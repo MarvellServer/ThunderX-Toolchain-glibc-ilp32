@@ -104,14 +104,14 @@ __MATHCALL (ldexp,, (_Mdouble_ __x, int __exponent));
 __MATHCALL_VEC (log,, (_Mdouble_ __x));
 
 /* Base-ten logarithm of X.  */
-__MATHCALL (log10,, (_Mdouble_ __x));
+__MATHCALL_VEC (log10,, (_Mdouble_ __x));
 
 /* Break VALUE into integral and fractional parts.  */
 __MATHCALL (modf,, (_Mdouble_ __x, _Mdouble_ *__iptr)) __nonnull ((2));
 
 #if __GLIBC_USE (IEC_60559_FUNCS_EXT_C2X)
 /* Compute exponent to base ten.  */
-__MATHCALL (exp10,, (_Mdouble_ __x));
+__MATHCALL_VEC (exp10,, (_Mdouble_ __x));
 #endif
 
 #if defined __USE_XOPEN_EXTENDED || defined __USE_ISOC99
@@ -127,10 +127,10 @@ __MATHCALL (logb,, (_Mdouble_ __x));
 
 #ifdef __USE_ISOC99
 /* Compute base-2 exponential of X.  */
-__MATHCALL (exp2,, (_Mdouble_ __x));
+__MATHCALL_VEC (exp2,, (_Mdouble_ __x));
 
 /* Compute base-2 logarithm of X.  */
-__MATHCALL (log2,, (_Mdouble_ __x));
+__MATHCALL_VEC (log2,, (_Mdouble_ __x));
 #endif
 
 

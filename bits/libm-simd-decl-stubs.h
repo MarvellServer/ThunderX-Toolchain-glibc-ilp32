@@ -77,6 +77,28 @@
 #define __DECL_SIMD_logf64x
 #define __DECL_SIMD_logf128x
 
+#define __DECL_SIMD_log2
+#define __DECL_SIMD_log2f
+#define __DECL_SIMD_log2l
+#define __DECL_SIMD_log2f16
+#define __DECL_SIMD_log2f32
+#define __DECL_SIMD_log2f64
+#define __DECL_SIMD_log2f128
+#define __DECL_SIMD_log2f32x
+#define __DECL_SIMD_log2f64x
+#define __DECL_SIMD_log2f128x
+
+#define __DECL_SIMD_log10
+#define __DECL_SIMD_log10f
+#define __DECL_SIMD_log10l
+#define __DECL_SIMD_log10f16
+#define __DECL_SIMD_log10f32
+#define __DECL_SIMD_log10f64
+#define __DECL_SIMD_log10f128
+#define __DECL_SIMD_log10f32x
+#define __DECL_SIMD_log10f64x
+#define __DECL_SIMD_log10f128x
+
 #define __DECL_SIMD_exp
 #define __DECL_SIMD_expf
 #define __DECL_SIMD_expl
@@ -87,6 +109,28 @@
 #define __DECL_SIMD_expf32x
 #define __DECL_SIMD_expf64x
 #define __DECL_SIMD_expf128x
+
+#define __DECL_SIMD_exp2
+#define __DECL_SIMD_exp2f
+#define __DECL_SIMD_exp2l
+#define __DECL_SIMD_exp2f16
+#define __DECL_SIMD_exp2f32
+#define __DECL_SIMD_exp2f64
+#define __DECL_SIMD_exp2f128
+#define __DECL_SIMD_exp2f32x
+#define __DECL_SIMD_exp2f64x
+#define __DECL_SIMD_exp2f128x
+
+#define __DECL_SIMD_exp10
+#define __DECL_SIMD_exp10f
+#define __DECL_SIMD_exp10l
+#define __DECL_SIMD_exp10f16
+#define __DECL_SIMD_exp10f32
+#define __DECL_SIMD_exp10f64
+#define __DECL_SIMD_exp10f128
+#define __DECL_SIMD_exp10f32x
+#define __DECL_SIMD_exp10f64x
+#define __DECL_SIMD_exp10f128x
 
 #define __DECL_SIMD_pow
 #define __DECL_SIMD_powf
