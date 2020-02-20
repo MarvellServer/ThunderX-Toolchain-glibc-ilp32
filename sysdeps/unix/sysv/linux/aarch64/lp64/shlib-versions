@@ -5,3 +5,10 @@ ld=ld-linux-aarch64_be.so.1
 %else
 ld=ld-linux-aarch64.so.1
 %endif
+DEFAULT			GLIBC_2.17
+
+%ifdef HAVE_AARCH64_BE
+ld=ld-linux-aarch64_be.so.1
+%else
+ld=ld-linux-aarch64.so.1
+%endif

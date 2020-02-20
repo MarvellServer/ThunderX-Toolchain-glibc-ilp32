@@ -1,0 +1,8 @@
+aarch64/nptl
+unix/sysv/linux/aarch64
+unix/sysv/linux/generic
+unix/sysv/linux/wordsize-64
+aarch64/nptl
+unix/sysv/linux/aarch64
+unix/sysv/linux/generic
+unix/sysv/linux/wordsize-64
