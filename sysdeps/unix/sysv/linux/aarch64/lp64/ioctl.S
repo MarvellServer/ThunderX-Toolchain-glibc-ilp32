@@ -1,11 +1,11 @@
-/* Old SysV permission definition for Linux.  AArch64 version.
-   Copyright (C) 2016-2020 Free Software Foundation, Inc.
+/* Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Lesser General Public
-   License as published by the Free Software Foundation; either
-   version 2.1 of the License, or (at your option) any later version.
+   modify it under the terms of the GNU Lesser General Public License as
+   published by the Free Software Foundation; either version 2.1 of the
+   License, or (at your option) any later version.
 
    The GNU C Library is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -16,10 +16,17 @@
    License along with the GNU C Library; if not, see
    <https://www.gnu.org/licenses/>.  */
 
-#include <sys/ipc.h>  /* For __key_t  */
+#include <sysdep.h>
 
-#ifdef __LP64__
-# define __IPC_64	0x0
-#else /* __ILP32  */
-# define __IPC_64	0x100
-#endif
+	.text
+ENTRY(__ioctl)
+	mov	x8, #__NR_ioctl
+	sxtw	x0, w0
+	svc	#0x0
+	cmn	x0, #4095
+	b.cs	.Lsyscall_error
+	ret
+PSEUDO_END (__ioctl)
+
+libc_hidden_def (__ioctl)
+weak_alias (__ioctl, ioctl)
