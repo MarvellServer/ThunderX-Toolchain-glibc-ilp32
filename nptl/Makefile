@@ -296,7 +296,7 @@ tests = tst-attr2 tst-attr3 tst-default-attr \
 	tst-exec1 tst-exec2 tst-exec3 tst-exec4 tst-exec5 \
 	tst-exit1 tst-exit2 tst-exit3 \
 	tst-stdio1 tst-stdio2 \
-	tst-stack1 tst-stack2 tst-stack3 tst-stack4 \
+	tst-stack1 tst-stack2 tst-stack3 tst-stack4 tst-pthread-getattr \
 	tst-pthread-attr-affinity tst-pthread-mutexattr \
 	tst-unload \
 	tst-dlsym1 \
